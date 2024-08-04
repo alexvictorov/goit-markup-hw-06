@@ -26,7 +26,7 @@
     <header class="cotainer">
       <div class="container container-data">
         <nav class="view-container">
-          <a class="link-logo" href="./index.html"
+          <a class="link-logo header-logo" href="./index.html"
             >WEB<span class="link-logo-name">Studio</span></a
           >
           <ul class="menu">
@@ -50,8 +50,83 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="/images/hero-icons.svg#icon-heroicons"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-button" data-menu-close type="button">
+          <svg class="mobile-menu-view" width="8" height="8">
+            <use href="./images/icons-x.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-nav-menu">
+            <li>
+              <a class="mobile-menu-nav-menu-link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-link">
+              <a class="mobile-menu-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-link">
+              <a class="mobile-menu-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-adress">
+          <ul class="mobile-adress-social-links">
+            <li class="mobile-address-links">
+              <a class="mobile-social-links" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-address-links">
+              <a class="mobile-social" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="mobile-title-data">
+          <ul class="mobile-card-social">
+            <li class="mobile-card-social-link">
+              <a class="card-social-link-view title" href="./images/icons.svg">
+                <svg class="mobile-card-social-logo" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-social-link">
+              <a class="card-social-link-view title" href="./images/icons.svg">
+                <svg class="card-social-logo" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-social-link">
+              <a class="card-social-link-view title" href="./images/icons.svg">
+                <svg class="card-social-logo" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="card-social-link">
+              <a class="card-social-link-view title" href="./images/icons.svg">
+                <svg class="card-social-logo" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <main>
       <section class="main-page">
@@ -59,7 +134,9 @@
           <h1 class="main-page-hello-text">
             Effective Solutions for Your Business
           </h1>
-          <button class="main-page-buttom" type="button">Order Service</button>
+          <button class="main-page-buttom" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -125,6 +202,7 @@
           <ul class="card-title-hello-menu">
             <li class="card-title-view">
               <img
+                srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -180,6 +258,7 @@
 
             <li class="card-title-view">
               <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -235,6 +314,7 @@
 
             <li class="card-title-view">
               <img
+                srcset=".//images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -290,6 +370,7 @@
 
             <li class="card-title-view">
               <img
+                srcset="./images/img-0.jpg 1x, ./images/img-0-2x.jpg 2x"
                 src="./images/img-0.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -351,12 +432,34 @@
           <ul class="project-card-view">
             <li class="project-card-view-portfolio">
               <div class="project-img">
-                <img
-                  src="./images/img-4.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-b-dex.jpg    1x,
+                      ./images/img-b-dex-2x.jpg 2x
+                    "
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-b-tab-1x.jpg 1x,
+                      ./images/img-b-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-b-mob-1x.jpg 1x,
+                      ./images/img-b-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./images/img-b-dex.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
                 <p class="project-img-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -371,12 +474,35 @@
 
             <li class="project-card-view-portfolio">
               <div class="project-img">
-                <img
-                  src="./images/img-5.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-c-dex.jpg    1x,
+                      ./images/img-c-dex-2x.jpg 2x
+                    "
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-c-tab-1x.jpg 1x,
+                      ./images/img-c-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-c-mob-1x.jpg 1x,
+                      ./images/img-c-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./images/img-c-dex.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="project-img-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -391,12 +517,35 @@
 
             <li class="project-card-view-portfolio">
               <div class="project-img">
-                <img
-                  src="./images/img-6.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-m-dex.jpg    1x,
+                      ./images/img-m-dex-2x.jpg 2x
+                    "
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-m-tab-1x.jpg 1x,
+                      ./images/img-m-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-m-mob-1x.jpg 1x,
+                      ./images/img-m-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./images/img-m-dex.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="project-img-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -411,12 +560,35 @@
 
             <li class="project-card-view-portfolio">
               <div class="project-img">
-                <img
-                  src="./images/img-7.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-t-dex.jpg    1x,
+                      ./images/img-t-dex-2x.jpg 2x
+                    "
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-t-tab-1x.jpg 1x,
+                      ./images/img-t-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-t-mob-1x.jpg 1x,
+                      ./images/img-t-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./images/img-t-dex.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="project-img-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -431,12 +603,35 @@
 
             <li class="project-card-view-portfolio">
               <div class="project-img">
-                <img
-                  src="./images/img-8.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-s-dex.jpg    1x,
+                      ./images/img-s-dex-2x.jpg 2x
+                    "
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-s-tab-1x.jpg 1x,
+                      ./images/img-s-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-s-mob-1x.jpg 1x,
+                      ./images/img-s-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./images/img-s-dex.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="project-img-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -451,12 +646,35 @@
 
             <li class="project-card-view-portfolio">
               <div class="project-img">
-                <img
-                  src="./images/img-9.jpg"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-o-dex.jpg    1x,
+                      ./images/img-o-dex-2x.jpg 2x
+                    "
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-o-tab-1x.jpg 1x,
+                      ./images/img-o-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-o-mob-1x.jpg 1x,
+                      ./images/img-o-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./images/img-o-dex.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="project-img-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -536,9 +754,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-window is-open">
+    <div class="modal-window" data-modal>
       <div class="modal-windows">
-        <button class="modal-windows-button" type="button">
+        <button class="modal-windows-button" data-modal-close type="button">
           <svg class="modal-windows-view" width="8" height="8">
             <use href="./images/icons-x.svg#icon-close-black"></use>
           </svg>
@@ -609,18 +827,21 @@
               name="user-privacy"
             />
             <label class="checkbox-label" for="user-privacy"
-              ><span class="checkbox-span">
+              ><span class=".checkbox-label-span">
                 <svg class="checkbox-label-view" width="10" height="8">
                   <use href="./images/icons-vector.svg#icon-Vector-1"></use>
                 </svg>
               </span>
+
               I accept the terms and conditions of the
-              <a class="link-label" href="">Privacy Policy</a></label
-            >
+              <a class="link-label" href="">Privacy Policy</a>
+            </label>
           </div>
           <button class="button-form-label">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
