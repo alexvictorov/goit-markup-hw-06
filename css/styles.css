@@ -44,8 +44,8 @@
 
  .main-page {
      background-color: #2e2f42;
-     padding-top: 188px;
-     padding-bottom: 188px;
+     padding-top: 72px;
+     padding-bottom: 72px;
      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob.jpg);
      max-width: 320px;
      background-repeat: no-repeat;
@@ -92,6 +92,9 @@
          width: 768px;
 
      }
+
+
+
  }
 
  @media screen and (min-width:1158px) {
@@ -159,6 +162,12 @@
  .burger-icon {
      display: block;
      fill: #2f2f37;
+ }
+
+ .data-team {
+     padding-top: 96px;
+     padding-bottom: 96px;
+
  }
 
  @media screen and (min-width:768px) {
@@ -238,6 +247,17 @@
 
      }
 
+     .nav-link {
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 1.5;
+         letter-spacing: 0.02em;
+         color: #2e2f42;
+         display: block;
+         padding-top: 24px;
+         padding-bottom: 24px;
+     }
+
      .link-link {
          font-weight: 500;
          font-size: 16px;
@@ -255,6 +275,8 @@
          font-style: normal;
          display: block;
      }
+
+
 
      .data-social-links {
          display: flex;
@@ -290,6 +312,12 @@
      .header-logo {
 
          margin-right: 76px;
+     }
+
+     .data-team {
+         padding-top: 120px;
+         padding-bottom: 120px;
+
      }
 
      .data-social-links {
@@ -425,8 +453,7 @@
      margin-bottom: 0;
      margin-top: 0;
      gap: 72px;
-     padding-top: 96px;
-     padding-bottom: 96px;
+
  }
 
  .main-page-title-data {
@@ -446,11 +473,19 @@
      color: #434455;
  }
 
+ .card-social {
+     display: flex;
+     justify-content: center;
+     gap: 24px;
+     margin-top: 8px;
+     margin-bottom: 32px;
+ }
+
  @media screen and (min-width:768px) {
      .data-team-container-menu {
          display: flex;
          flex-wrap: wrap;
-         gap: 24px;
+         gap: 72px 24px;
      }
 
      .data-team-container-menu-title {
@@ -469,8 +504,7 @@
          margin-bottom: 0;
          margin-top: 0;
          gap: 24px;
-         padding-top: 120px;
-         padding-bottom: 120px;
+
      }
 
      .data-team-container-menu-title {
@@ -518,7 +552,6 @@
 
  .card-title-hello-menu {
      display: flex;
-
      gap: 72px;
      /* margin-right: 0; */
      flex-wrap: wrap;
@@ -526,6 +559,11 @@
      justify-content: flex-start;
      padding-left: 12px;
      padding-right: 12px;
+
+ }
+
+ .card-title-view {
+     background-color: #FFFFFF;
  }
 
  .card-title {
@@ -548,12 +586,7 @@
 
  }
 
- .card-social {
-     display: flex;
-     justify-content: center;
-     gap: 24px;
-     margin-top: 8px;
- }
+
 
  .card-social-link {
      width: 40px;
@@ -580,8 +613,20 @@
      .card-title-hello-menu {
 
          gap: 64px 24px;
-         padding-left: 92px;
-         padding-right: 92px;
+
+
+     }
+
+     .card .container-card {
+         width: 584px;
+
+
+     }
+
+     .card-title-hello-menu {
+
+         padding-left: 0px;
+         padding-right: 0px;
 
      }
 
@@ -596,6 +641,10 @@
  }
 
  @media screen and (min-width:1158px) {
+     .card .container-card {
+         width: 1158px;
+     }
+
      .card {
          background: #f4f4fd;
          padding-top: 120px;
@@ -623,7 +672,7 @@
      }
 
      .card-title-view {
-         background-color: #FFFFFF;
+
          width: calc((100% - 72px) / 4);
          border-radius: 0px 0px 4px 4px;
          box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -770,7 +819,7 @@
      letter-spacing: 0.02em;
      color: #f4f4fd;
      max-width: 264px;
-     padding-top: 16px;
+     margin-top: 16px;
  }
 
  .logo-text-footer {
@@ -866,12 +915,12 @@
 
  @media screen and (min-width:768px) {
      .data-view .container {
-         width: 496px;
+         width: 584px;
          display: flex;
          flex-wrap: wrap;
          gap: 16px 24px;
          padding: 0;
-         margin-left: 134px;
+
 
      }
 
@@ -899,14 +948,12 @@
          margin-bottom: 0px;
      }
 
-     .data-view-text {
-         padding-top: 16px;
-     }
+
 
      .data-view-footer-text {
 
          text-align: start;
-         padding-top: 58px;
+
 
      }
 
@@ -1624,7 +1671,6 @@
          padding: 16px 32px;
          margin: auto;
          margin-top: 24px;
-
 
 
      }
